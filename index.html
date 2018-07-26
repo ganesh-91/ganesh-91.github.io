@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Coming Soon 10</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+	<!--  -->
+	<div class="simpleslide100">
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg03.jpg');"></div>
+	</div>
+
+	<div class="text-container">
+
+		<div>
+			<h3 class="l1-txt2">
+				Coming Soon
+			</h3>
+		</div>
+
+	</div>
+
+	<script src="vendor/jquery-3.2.1.min.js"></script>
+	<script>
+		$('.simpleslide100').each(function () {
+			var delay = 7000;
+			var speed = 1000;
+			var itemSlide = $(this).find('.simpleslide100-item');
+			var nowSlide = 0;
+
+			$(itemSlide).hide();
+			$(itemSlide[nowSlide]).show();
+			nowSlide++;
+			if (nowSlide >= itemSlide.length) { nowSlide = 0; }
+
+			setInterval(function () {
+				$(itemSlide).fadeOut(speed);
+				$(itemSlide[nowSlide]).fadeIn(speed);
+				nowSlide++;
+				if (nowSlide >= itemSlide.length) { nowSlide = 0; }
+			}, delay);
+		});
+	</script>
+
+</body>
+
+</html>
