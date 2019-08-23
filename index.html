@@ -1,54 +1,800 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
-	<title>Coming Soon 10</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		.gm-style .gm-style-mtc label,
+		.gm-style .gm-style-mtc div {
+			font-weight: 400
+		}
+	</style>
+	<style>
+		.gm-control-active>img {
+			box-sizing: content-box;
+			display: none;
+			left: 50%;
+			pointer-events: none;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%)
+		}
+
+		.gm-control-active>img:nth-child(1) {
+			display: block
+		}
+
+		.gm-control-active:hover>img:nth-child(1),
+		.gm-control-active:active>img:nth-child(1) {
+			display: none
+		}
+
+		.gm-control-active:hover>img:nth-child(2),
+		.gm-control-active:active>img:nth-child(3) {
+			display: block
+		}
+	</style>
+	<link type="text/css" rel="stylesheet"
+		href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+	<style>
+		.gm-ui-hover-effect {
+			opacity: .6
+		}
+
+		.gm-ui-hover-effect:hover {
+			opacity: 1
+		}
+	</style>
+	<style>
+		.gm-style .gm-style-cc span,
+		.gm-style .gm-style-cc a,
+		.gm-style .gm-style-mtc div {
+			font-size: 10px;
+			box-sizing: border-box
+		}
+	</style>
+	<style>
+		@media print {
+
+			.gm-style .gmnoprint,
+			.gmnoprint {
+				display: none
+			}
+		}
+
+		@media screen {
+
+			.gm-style .gmnoscreen,
+			.gmnoscreen {
+				display: none
+			}
+		}
+	</style>
+	<style>
+		.gm-style-pbc {
+			transition: opacity ease-in-out;
+			background-color: rgba(0, 0, 0, 0.45);
+			text-align: center
+		}
+
+		.gm-style-pbt {
+			font-size: 22px;
+			color: white;
+			font-family: Roboto, Arial, sans-serif;
+			position: relative;
+			margin: 0;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%)
+		}
+	</style>
+	<style>
+		.gm-style img {
+			max-width: none;
+		}
+
+		.gm-style {
+			font: 400 11px Roboto, Arial, sans-serif;
+			text-decoration: none;
+		}
+	</style>
+	<title>Ganesh Khaire </title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Maha Personal cv/resume template for professional and personal website.">
+	<meta name="keywords"
+		content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard ">
+	<meta name="developer" content="Md. Siful Islam">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- FAV AND ICONS   -->
+	<!-- Google Font-->
+	<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="./fonts/font-awesome-4.7.0/fonts/font-awesome.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Animate CSS-->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Fancybox-->
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+	<!-- Custom CSS-->
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<!-- Colors -->
+	<link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue" disabled="">
+	<!-- <link rel="alternate stylesheet" href="assets/css/colors/green.css" title="green"> -->
+	<!-- <link rel="alternate stylesheet" href="assets/css/colors/blue-munsell.css" title="blue-munsell" disabled=""> -->
 </head>
 
-<body>
-
-	<!--  -->
-	<div class="simpleslide100">
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg03.jpg');"></div>
-	</div>
-
-	<div class="text-container">
-
-		<div>
-			<h3 class="l1-txt2">
-				Coming Soon
-			</h3>
+<body class="white-vertion black-bg">
+	<!-- Start Loader -->
+	<div class="section-loader" style="display: none;">
+		<div class="loader">
+			<div></div>
+			<div></div>
 		</div>
-
 	</div>
+	<!-- End Loader -->
 
-	<script src="vendor/jquery-3.2.1.min.js"></script>
-	<script>
-		$('.simpleslide100').each(function () {
-			var delay = 7000;
-			var speed = 1000;
-			var itemSlide = $(this).find('.simpleslide100-item');
-			var nowSlide = 0;
+	<!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+	<header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp nav-strict" id="mh-header"
+		style="visibility: visible; animation-name: fadeInUp;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg mh-nav nav-btn">
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="true" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon icon"></span>
+					</button>
 
-			$(itemSlide).hide();
-			$(itemSlide[nowSlide]).show();
-			nowSlide++;
-			if (nowSlide >= itemSlide.length) { nowSlide = 0; }
+					<div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+						<ul class="navbar-nav mr-auto ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#mh-home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#mh-about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#mh-skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#mh-experience">Experiences</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#mh-portfolio">Side Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#mh-blog">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
 
-			setInterval(function () {
-				$(itemSlide).fadeOut(speed);
-				$(itemSlide[nowSlide]).fadeIn(speed);
-				nowSlide++;
-				if (nowSlide >= itemSlide.length) { nowSlide = 0; }
-			}, delay);
-		});
-	</script>
+	<!--
+        ===================
+            HOME 
+        ===================
+        -->
+	<section class="mh-home" id="mh-home">
+		<div class="home-ovimg">
+			<div class="container">
+				<div class="row xs-column-reverse section-separator home-padding">
+					<div class="col-sm-6">
+						<div class="mh-header-info">
+							<div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"
+								style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.1s; animation-name: fadeInUp;">
+								<span>Hello I'm</span>
+							</div>
+
+							<h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
+								style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+								Ganesh Khaire</h2>
+							<h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"
+								style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+								Front-End Developer</h4>
+
+							<ul>
+								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<i class="fa fa-envelope"></i><br class="d-lg-none d-xl-none d-md-none">
+									<a href="mailto:">Ganesh.khaire91@gmail.com</a></li>
+								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+									<i class="fa fa-phone"></i><br class="d-lg-none d-xl-none d-md-none">
+									
+									<a href="callto:">+91 95528 34422</a>
+								</li>
+								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
+									<i class="fa fa-map-marker"></i><br class="d-lg-none d-xl-none d-md-none">
+									<address>Pune, Maharashtra, India</address>
+								</li>
+							</ul>
+
+							<ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s"
+								style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.7s; animation-name: fadeInUp;">
+								<li><a href="https://github.com/ganesh-91" target="_blank"><i class="fa fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+        ==================
+            ABOUT
+        =================
+        -->
+	<section class="mh-about" id="mh-about">
+		<div class="container">
+			<div class="row section-separator">
+				<div class="col-sm-12 col-md-6">
+					<div class="mh-about-inner">
+						<h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"
+							style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.1s; animation-name: fadeInUp;">
+							About Me</h2>
+						<p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
+							style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+							Hello, I’m a Ganesh Khaire, front-end developer based out of Pune.
+							I have rich experience with front end development technologies.
+							Having experience working with all major technologies used
+							to develop modern web apps.
+							<br>Also I am good at</p>
+						<div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"
+							style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+							<ul>
+								<li><span>html</span></li>
+								<li><span>css</span></li>
+								<li><span>Javascript</span></li>
+								<li><span>jquery</span></li>
+								<li><span>React</span></li>
+								<li><span>Angular 2+</span></li>
+								<li><span>Angular js</span></li>
+								<li><span>Webpack</span></li>
+								<li><span>Wordpress</span></li>
+							</ul>
+						</div>
+						<!-- <a href="" class="btn btn-primary btn-fill fadeInUp" 
+							download="ganesh_khaire_resume.pdf">Downlaod
+							CV <i class="fa fa-download"></i></a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+        ===================
+           SKILLS
+        ===================
+        -->
+	<section class="mh-skills" id="mh-skills">
+		<div class="container">
+			<div class="row section-separator">
+				<div class="section-title text-center col-sm-12">
+					<!--<h2>Skills</h2>-->
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="mh-skills-inner">
+						<div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"
+							style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+							<h3>Technical Skills</h3>
+							<div class="each-skills">
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">Javascript / jquery</div>
+											<div class="percentagem-num">86%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 86%;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">React js</div>
+											<div class="percentagem-num">80%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 80%;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">Redux</div>
+											<div class="percentagem-num">80%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 80%;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">Angular 2+</div>
+											<div class="percentagem-num">60%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 60%;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">Angular js</div>
+											<div class="percentagem-num">50%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 50%;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">Webpack</div>
+											<div class="percentagem-num">60%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 60%;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="candidatos">
+									<div class="parcial">
+										<div class="info">
+											<div class="nome">MEAN stack</div>
+											<div class="percentagem-num">40%</div>
+										</div>
+										<div class="progressBar">
+											<div class="percentagem" style="width: 40%;"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"
+						style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+						<h3>Professional Skills</h3>
+						<ul class="mh-professional-progress">
+							<li>
+								<div class="mh-progress mh-progress-circle active" data-progress="95"
+									style="position: relative;"><svg viewBox="0 0 100 100">
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#555" stroke-width="5" fill-opacity="0"
+											style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 14.9247;">
+										</path>
+									</svg>
+									<p class="progressbar-text"
+										style="position: absolute; top: 50%; left: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(85, 85, 85);">
+										95%</p>
+								</div>
+								<div class="pr-skill-name">Communication</div>
+							</li>
+							<li>
+								<div class="mh-progress mh-progress-circle active" data-progress="75"
+									style="position: relative;"><svg viewBox="0 0 100 100">
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#555" stroke-width="5" fill-opacity="0"
+											style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 75;">
+										</path>
+									</svg>
+									<p class="progressbar-text"
+										style="position: absolute; top: 50%; left: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(85, 85, 85);">
+										75%</p>
+								</div>
+								<div class="pr-skill-name">Team Work</div>
+							</li>
+							<li>
+								<div class="mh-progress mh-progress-circle active" data-progress="86"
+									style="position: relative;"><svg viewBox="0 0 100 100">
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#555" stroke-width="5" fill-opacity="0"
+											style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 41.789;">
+										</path>
+									</svg>
+									<p class="progressbar-text"
+										style="position: absolute; top: 50%; left: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(85, 85, 85);">
+										86%</p>
+								</div>
+								<div class="pr-skill-name">Project Management</div>
+							</li>
+							<li>
+								<div class="mh-progress mh-progress-circle active" data-progress="60"
+									style="position: relative;"><svg viewBox="0 0 100 100">
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+										<path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+											stroke="#555" stroke-width="5" fill-opacity="0"
+											style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 60.66;">
+										</path>
+									</svg>
+									<p class="progressbar-text"
+										style="position: absolute; top: 50%; left: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(85, 85, 85);">
+										80%</p>
+								</div>
+								<div class="pr-skill-name">Creativity</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+	<section class="mh-experince" id="mh-experience">
+		<div class="bolor-overlay">
+			<div class="container">
+				<div class="row section-separator">
+					<div class="col-sm-12 col-md-6">
+						<div class="mh-education">
+							<h3 class="wow fadeInUp text-center" data-wow-duration="0.8s" data-wow-delay="0.2s"
+								style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+								Education</h3>
+							<div class="mh-education-deatils">
+								<!-- Education Institutes-->
+								<div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
+									data-wow-delay="0.5s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+									<h4>Master's of Computer Application <br><a >University of Pune</a>
+									</h4>
+									<div class="mh-eduyear">2013-2016</div>
+									<!-- <ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>Used to design flyers for MIT college</li>
+										<li><i class="fa fa-circle"></i>Used to design flyers for MIT college</li>
+									</ul> -->
+								</div>
+								<!-- Education Institutes-->
+								<div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
+									data-wow-delay="0.3s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+									<h4>Bachlore of Computer Application <br><a >Punjab Technical University</a>
+									</h4>
+									<div class="mh-eduyear">2009-2012</div>
+									<!-- <ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>Scored : 76%</li>
+									</ul> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="mh-work">
+							<h3 class="text-center">Work Experience</h3>
+							<div class="mh-experience-deatils">
+								<!-- Education Institutes-->
+								<div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
+									data-wow-delay="0.7s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.7s; animation-name: fadeInUp;">
+									<h4>Software Engineer I <br><a href="">Knorex India Pvt Ltd</a></h4>
+									<div class="mh-eduyear">Jan 2019</div>
+									<span>Responsibility :</span>
+									<ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>Validate CSS</li>
+										<li><i class="fa fa-circle"></i>Project Management</li>
+									</ul>
+									<span class="mt-1">Skill sets :</span>
+									<ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>MEAN stack</li>
+									</ul>
+								</div>
+								<!-- Education Institutes-->
+								<div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
+									data-wow-delay="0.6s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
+									<h4>Senior Software Engineer <br><a href="">Persistent Systems</a></h4>
+									<div class="mh-eduyear">Jan 2018 - Dec 2018</div>
+									<span>Responsibility :</span>
+									<ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>Develop components</li>
+										<li><i class="fa fa-circle"></i>Project Management</li>
+										<li><i class="fa fa-circle"></i>Code Review</li>
+									</ul>
+									<span class="mt-1">Skill sets :</span>
+									<ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>Angular 4</li>
+										<li><i class="fa fa-circle"></i>Survey js</li>
+										<li><i class="fa fa-circle"></i>Webpack 4</li>
+									</ul>
+								</div>
+								<!-- Education Institutes-->
+
+
+								<div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
+									data-wow-delay="0.4s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<h4>Software Engineer <br><a href="">Uxdialogue LLP</a></h4>
+									<div class="mh-eduyear">May 2016 - Dec 2017</div>
+									<span>Responsibility :</span>
+									<ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>Project Management</li>
+										<li><i class="fa fa-circle"></i>Finalized Requirement</li>
+										<li><i class="fa fa-circle"></i>Develop components</li>
+										<li><i class="fa fa-circle"></i>Code Review</li>
+									</ul>
+									<span class="mt-1">Skill sets :</span>
+									<ul class="work-responsibility">
+										<li><i class="fa fa-circle"></i>React </li>
+										<li><i class="fa fa-circle"></i>Redux</li>
+										<li><i class="fa fa-circle"></i>Webpack</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+        ===================
+           PORTFOLIO
+        ===================
+        -->
+	<section class="mh-portfolio" id="mh-portfolio">
+		<div class="container">
+			<div class="row section-separator">
+				<div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"
+					style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.1s; animation-name: fadeInUp;">
+					<h3>Side Projects</h3>
+				</div>
+				<div class="part col-sm-12">
+					<div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s"
+						data-wow-delay="0.5s"
+						style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+						<div class="portfolioContainer row" style="position: relative; height: 625.046px;">
+
+							<div class="grid-item col-md-3 col-sm-4 col-xs-12 user-interface">
+								<figure>
+									<img src="images/tetris.png" alt="img04">
+									<figcaption class="fig-caption">
+										<i class="fa fa-search"></i>
+										<h5 class="title">Tetris game</h5>
+										<span class="sub-title" style="padding: 0px 20px;">Developed a game in
+											react</span>
+										<a data-fancybox="" href="https://github.com/ganesh-91/tetris-game-in-react"
+											target="_blank"></a>
+									</figcaption>
+
+								</figure>
+							</div>
+
+							<div class="grid-item col-md-3 col-sm-4 col-xs-12 user-interface">
+								<figure>
+									<img src="images/multi select.png" alt="img04">
+									<figcaption class="fig-caption">
+										<i class="fa fa-search"></i>
+										<h5 class="title">React multi select</h5>
+										<span class="sub-title" style="padding: 0px 20px;">React multi select component
+											published on NPM
+											registry</span>
+										<a data-fancybox="" href="https://www.npmjs.com/package/multi-select-react"
+											target="_blank"></a>
+									</figcaption>
+								</figure>
+							</div>
+
+							<div class="grid-item col-md-3 col-sm-4 col-xs-12 user-interface">
+								<figure>
+									<img src="images/read_more.png" alt="img04">
+									<figcaption class="fig-caption">
+										<i class="fa fa-search"></i>
+										<h5 class="title">React Read-more</h5>
+										<span class="sub-title" style="padding: 0px 20px;">React read more component
+											published on NPM
+											registry</span>
+										<a data-fancybox=""
+											href="https://www.npmjs.com/package/@ganesh-91/readmore-react"
+											target="_blank"></a>
+									</figcaption>
+								</figure>
+							</div>
+
+						</div> <!-- End: .grid .project-gallery -->
+					</div> <!-- End: .grid .project-gallery -->
+				</div> <!-- End: .part -->
+			</div> <!-- End: .row -->
+		</div>
+	</section>
+
+	<!--
+        ===================
+           BLOG
+        ===================
+        -->
+	<section class="mh-blog" id="mh-blog">
+		<div class="container">
+			<div class="row section-separator">
+				<div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
+					style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+					<h3>Featured Posts</h3>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"
+						style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+						<img src="" alt="" class="img-fluid">
+						<div class="blog-inner">
+							<h2><a href="blog-single.html">A life without the daily traffic jams</a></h2>
+							<div class="mh-blog-post-info">
+								<ul>
+									<li><strong>Post On</strong><a href="">24.11.19</a></li>
+									<li><strong>By</strong><a href="">ThemeSpiders</a></li>
+								</ul>
+							</div>
+							<p>It is a long established fact that a reader will be distracted by the readable content of
+								a page when looking at its layout</p>
+							<a href="blog-single.html">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"
+						style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+						<img src="" alt="" class="img-fluid">
+						<div class="blog-inner">
+							<h2><a href="blog-single.html">Proportion are what’s really needed</a></h2>
+							<div class="mh-blog-post-info">
+								<ul>
+									<li><strong>Post On</strong><a href="">24.11.19</a></li>
+									<li><strong>By</strong><a href="">ThemeSpiders</a></li>
+								</ul>
+							</div>
+							<p>It is a long established fact that a reader will be distracted by the readable content of
+								a page when looking at its layout</p>
+							<a href="blog-single.html">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s"
+						style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.7s; animation-name: fadeInUp;">
+						<img src="" alt="" class="img-fluid">
+						<div class="blog-inner">
+							<h2><a href="blog-single.html">Mounts of paper work to remember the way</a></h2>
+							<div class="mh-blog-post-info">
+								<ul>
+									<li><strong>Post On</strong><a href="">24.11.19</a></li>
+									<li><strong>By</strong><a href="">ThemeSpiders</a></li>
+								</ul>
+							</div>
+							<p>It is a long established fact that a reader will be distracted by the readable content of
+								a page when looking at its layout</p>
+							<a href="blog-single.html">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+        ===================
+           FOOTER 1
+        ===================
+        -->
+	<!-- <footer class="mh-footer" id="mh-contact">
+		<div class="map-image image-bg">
+			<div class="container">
+				<div class="row section-separator">
+					<div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
+						style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+						<h3>Contact Me</h3>
+					</div>
+					<div class="col-sm-12 mh-footer-address">
+						<div class="row">
+							<div class="col-sm-12 col-md-4">
+								<div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+									data-wow-duration="0.8s" data-wow-delay="0.3s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+									<div class="each-icon">
+										<i class="fa fa-location-arrow"></i>
+									</div>
+									<div class="each-info">
+										<h4>Address</h4>
+										<address>
+											5th Avenue, 34th floor, <br>
+											New york
+										</address>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+									data-wow-duration="0.8s" data-wow-delay="0.5s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInUp;">
+									<div class="each-icon">
+										<i class="fa fa-envelope-o"></i>
+									</div>
+									<div class="each-info">
+										<h4>Email</h4>
+										<a href="mailto:yourmail@email.com">yourmail@email.com</a><br>
+										<a href="mailto:yourmail@email.com">yourmail@email.com</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+									data-wow-duration="0.8s" data-wow-delay="0.7s"
+									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.7s; animation-name: fadeInUp;">
+									<div class="each-icon">
+										<i class="fa fa-phone"></i>
+									</div>
+									<div class="each-info">
+										<h4>Phone</h4>
+										<a href="callto:(880)-8976-987">(880)-8976-987</a><br>
+										<a href="callto:(880)-8976-987">(880)-8976-987</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer> -->
+
+	<!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- popper -->
+	<!-- <script src="assets/js/popper.min.js"></script> -->
+	<!-- <script src="assets/js/isotope.pkgd.js"></script> -->
+	<!-- <script src="assets/js/jquery.nav.js"></script> -->
+	<!-- bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/custom-scripts.js"></script>
 
 </body>
 
