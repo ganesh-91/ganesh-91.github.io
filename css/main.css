@@ -50,6 +50,7 @@
 html {
     display: flex;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
